@@ -19,6 +19,7 @@ const Lesson05quiz = () => {
     petArr.push(<Text key={pet.name}>-------{pet.name}</Text>);
     console.log('Age:');
     petArr.push(<Text key={pet.age}>-------{pet.age}</Text>);
+    petArr.push(<Image source={pet.imag} />);
     console.log(petArr);
   }
   let ownerArr = [];
