@@ -37,6 +37,7 @@ const OWNER_DATA = {
       <ScrollView>
       <View>
       <View>{petArr}</View>
+        <View>{ownerArr}</View>
       </View>
       </ScrollView>
   );
