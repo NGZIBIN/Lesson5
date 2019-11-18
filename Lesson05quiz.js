@@ -11,35 +11,37 @@ const OWNER_DATA = {
   membership: 'gold',
 };
 
-  const Lesson05quiz = () => {
-    let petArr = [];
-    for (let i = 0; i < PET_DATA.length; i++) {
-      let pet = PET_DATA[i];
-      console.log("Name:")
-      petArr.push(<Text key={pet.name}>-------{pet.name}</Text>);
-      console.log("Age:")
-      petArr.push(<Text key={pet.age}>-------{pet.age}</Text>);
-      console.log(petArr);
-
-    };
-    let ownerArr = [];
-    for (let x = 0; x < OWNER_DATA.length; x++) {
-      let owner = OWNER_DATA[x];
-      console.log("Owner Information")
-      console.log("-------")
-      console.log("Name:")
-      ownerArr.push(<Text key={owner.name}>-------{owner.name}</Text>);
-      console.log("Contact:")
-      ownerArr.push(<Text key={owner.contact}>-------{owner.contact}</Text>);
-      console.log("Membership::")
-      ownerArr.push(<Text key={owner.membership}>-------{owner.membership}</Text>);
+const Lesson05quiz = () => {
+  let petArr = [];
+  for (let i = 0; i < PET_DATA.length; i++) {
+    let pet = PET_DATA[i];
+    console.log('Name:');
+    petArr.push(<Text key={pet.name}>-------{pet.name}</Text>);
+    console.log('Age:');
+    petArr.push(<Text key={pet.age}>-------{pet.age}</Text>);
+    console.log(petArr);
+  }
+  let ownerArr = [];
+  for (let x = 0; x < OWNER_DATA.length; x++) {
+    let owner = OWNER_DATA[x];
+    console.log('Owner Information');
+    console.log('-------');
+    console.log('Name:');
+    ownerArr.push(<Text key={owner.name}>-------{owner.name}</Text>);
+    console.log('Contact:');
+    ownerArr.push(<Text key={owner.contact}>-------{owner.contact}</Text>);
+    console.log('Membership::');
+    ownerArr.push(
+      <Text key={owner.membership}>-------{owner.membership}</Text>,
+    );
+  }
   return (
-      <ScrollView>
+    <ScrollView>
       <View>
-      <View>{petArr}</View>
+        <View>{petArr}</View>
         <View>{ownerArr}</View>
       </View>
-      </ScrollView>
+    </ScrollView>
   );
 };
 export default Lesson05quiz;
